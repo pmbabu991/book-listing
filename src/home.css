@@ -1,0 +1,143 @@
+.wrapper-skin {
+    display: flex;
+    justify-content: center;
+}
+
+.brand-logo {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 25px;
+}
+.search-wrapper {
+    margin-top: 100px;
+}
+
+.search-skin {
+    height: 50px;
+}
+
+.text-box {
+    width: 500px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid #b3b3b3;
+    padding: 20px;
+}
+
+.text-box:focus { 
+    outline: none !important;
+    border-color: #00adda;
+    box-shadow: 0 0 1px #00adda;
+ }
+
+.search-btn {
+    width: 60px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #00adda;
+    border: none;
+}
+
+.list-wrapper {
+    width: 560px;
+    height: auto;
+    background: #fff;
+    padding: 24px;
+    border-radius: 3px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 25%);
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 3;
+}
+
+.list-wrapper > div {
+    flex: 50%;
+    margin-bottom: 10px;
+  }
+
+.list-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    height: 40px;
+    background-color: #e30613;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+#book-title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.dropdwn-wrapper {
+    margin: 20px;
+}
+
+#search-title {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sort-dropdwn {
+    border-top: 1px solid #dbddde;
+    border-bottom: 1px solid #dbddde;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 50px;
+    padding: 6px;
+}
+
+.sort-dropdwn div {
+    border-left: 1px solid #dbddde;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.sort-dropdwn p {
+    margin: 0;
+    padding-left: 5px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+select {
+    border: none;
+}
+
+.search-list-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-list-wrapper > div {
+    flex: 30%; 
+    margin-bottom: 10px;
+  }
+
+@media (max-width: 700px) {
+    .search-list-wrapper > div {
+        flex: 100%;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+
+    .list-wrapper {
+        width: auto;
+    }
+
+    .text-box {
+        width: 100%;
+    }
+}
+
